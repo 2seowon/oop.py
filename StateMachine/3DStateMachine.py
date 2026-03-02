@@ -13,7 +13,7 @@ class VTOLStateMachine:
         # 드론의 현재 상태 (state)
         self.curr_pos = np.array([0.0, 0.0, 0.0]) #(0,0,0)에서 현재 위치 시작
         self.battery = 100.0
-        self.mode = "TAKEOFF"  #비행 모드 4개 (IDLE,TAKEOFF,MISSION,RTL)
+        self.mode = "TAKEOFF"  #비행 모드 3개 (TAKEOFF,MISSION,RTL)
         self.takeoff_alt = 5.0 #목표 이륙 고도
 
     def update_drone(self): #0.5초마다 호출되어 드론의 상태를 업데이트 하는 함수
