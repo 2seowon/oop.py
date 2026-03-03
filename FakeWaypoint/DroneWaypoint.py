@@ -42,7 +42,6 @@ class MiniFlightTest:
         return True
 
 
-# 3. 들여쓰기 수정: 클래스 밖으로 완전히 빼내기 (벽에 딱 붙임!)
 if __name__ == "__main__":
     test_node = MiniFlightTest()
     is_flying = True

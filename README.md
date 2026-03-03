@@ -6,5 +6,5 @@ practice file
 ### : first oop , just tracking way point mission
 ###   2D Coordinate 
 ## 0302 
-### : statemachine start, flight mode = [ idle, takeoff, mission, rtl ]
+### : statemachine start, flight mode = [takeoff, mission, rtl ]
 ###   3D Coordinate 
