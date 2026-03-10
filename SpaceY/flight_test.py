@@ -1,4 +1,5 @@
 import math 
+import sys 
 
 import rclpy 
 from rclpy.node import Node
@@ -187,9 +188,12 @@ class FlightTest(Node):
                     self.target_index += 1 
                     self.reached_target_counter = 0.0 # 새로운 인덱스에서 다시 0.0초로 초기화
                 else:
-                    pass  
-
-                #마지막 웨이 포인트에 도달하면 그 자리에서 호버링 (pass)
+                    self.publish_vehicle_command(VehicleCommand.VEHICLE_CMD_NAV_LAND,0.0,0.0) #마지막 웨이포인트에서 착륙 , disarm은 스스로 됨 
+                    self.get_logger().info("LAND COMMAND SEND")
+                    self.timer.cancel() # 타이머, 콜백 함수 종료 
+                    sys.exit(0) #프로그램 정상 종료 
+                    
+                
 
 
 def main(args=None):
