@@ -8,3 +8,10 @@ practice file
 ## 0302 
 ### : statemachine start, flight mode = [takeoff, mission, rtl ]
 ###   3D Coordinate 
+
+## March 2nd week 
+### flight_test.py 
+
+## March 3rd week 
+### OpenCV & marker_recognition.py
+
